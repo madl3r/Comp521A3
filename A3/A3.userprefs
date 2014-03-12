@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SpawnBlocksAndTreasure.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GuardMoveAndLook.cs">
     <Files>
       <File FileName="Assets/Scripts/SpawnBlocksAndTreasure.cs" Line="10" Column="131" />
+      <File FileName="../../Comp521A1/A1/Assets/Scripts/SlideDoorTrigger.cs" Line="27" Column="3" />
+      <File FileName="../../Space-Dinosaurs/FowlPlay/Assets/Scripts/ClickAndMove.cs" Line="147" Column="28" />
+      <File FileName="Assets/Scripts/GuardMoveAndLook.cs" Line="54" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

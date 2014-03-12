@@ -163,7 +163,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 //		}
 		float distCovered;// = (Time.time - startTime) * speed;
 		float fracJourney = 0.0f;// = distCovered / journeyLength;
-		while (fracJourney < 0.95f)
+		while (fracJourney < 0.99f)
 		{
 			distCovered = (Time.time - startTime) * speed;
 			fracJourney = distCovered / journeyLength;

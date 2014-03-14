@@ -153,14 +153,6 @@ public class GuardMoveAndLook : MonoBehaviour {
 	//Lerps the door closed.
 	IEnumerator toNextWaypoint()
 	{
-//		float i = 0.0f;
-//		while(i < 1.0f)
-//		{
-//			i += Time.deltaTime * 0.25f;
-//			//Debug.Log(i);
-//			transform.position = Vector3.Lerp(startPosition, nextPosition, i);
-//			yield return new WaitForSeconds(0.005f);
-//		}
 		float distCovered;// = (Time.time - startTime) * speed;
 		float fracJourney = 0.0f;// = distCovered / journeyLength;
 		while (fracJourney < 0.99f)
@@ -170,7 +162,22 @@ public class GuardMoveAndLook : MonoBehaviour {
 			transform.position = Vector3.Lerp(startPosition, nextPosition, fracJourney);
 			yield return new WaitForSeconds(0.005f);
 		}
+
+		//now that we're at the point we check to see if this point is inside of a room
+		//If we're inside of a room let's hang out for a bit and look around.
+	//DON'T DO THAT HERE, IN THE UPDATE METHOD IF WE DETECT A CLOSE ENOUGH GUARD, THEN CANCEL ALL COROUTINES 
+	// AND THEN SWITCH TO HANG OUT MODE. ONCE DONE MOVE BACK TO THIS STATE FROM THE CURRENT TO THE PREVIOUS NEXT POINT.
+
+		//lets us look for the next point in update!
 		atNextPoint = true;
 		yield break;
 	}
+
+	IEnumerator lookAroundRoom()
+	{
+		//look around the room for a bit and semi randomly.
+		yield break;
+	}
+
+
 }

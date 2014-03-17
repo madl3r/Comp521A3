@@ -55,8 +55,13 @@
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Optional\HeadBob.cs" />
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Optional\PauseMenu.cs" />
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Utils\CameraFade.cs" />
+     <Compile Include="Assets\Scripts\Behavior.cs" />
+     <Compile Include="Assets\Scripts\BehaviorTree.cs" />
      <Compile Include="Assets\Scripts\GuardMoveAndLook.cs" />
+     <Compile Include="Assets\Scripts\Selector.cs" />
+     <Compile Include="Assets\Scripts\Sequencer.cs" />
      <Compile Include="Assets\Scripts\SpawnBlocksAndTreasure.cs" />
+     <Compile Include="Assets\Scripts\visionLine.cs" />
      <None Include="Assets\First Person Drifter Controller\info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

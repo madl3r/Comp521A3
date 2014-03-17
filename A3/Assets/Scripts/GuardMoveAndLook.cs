@@ -7,6 +7,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 
 	public List<GameObject> theWaypoints;
 
+	public BehaviorTree AItree; 
 
 	private GameObject[]allWayPoints;
 
@@ -27,6 +28,10 @@ public class GuardMoveAndLook : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		AItree.printName();
+
+
+
 		checkedRoom = false;
 		speed = 4.0f;
 		atNextPoint = true;
@@ -38,6 +43,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 
 		transform.position = allWayPoints[rand].transform.position;
 		currentWaypoint = allWayPoints[rand];
+
 
 
 	}
@@ -53,14 +59,14 @@ public class GuardMoveAndLook : MonoBehaviour {
 
 			//Choose the next waypoint to go to
 			
-			Debug.Log("The current waypoints name: " + currentWaypoint.name);
+		//	Debug.Log("The current waypoints name: " + currentWaypoint.name);
 			
 			if (Regex.IsMatch(currentWaypoint.name, "^*INSIDE"))
 			{
 				//Can only go to currentWaypoints name - INSIDE
-				Debug.Log("Started inside of a room");
+				//Debug.Log("Started inside of a room");
 				//Debug.Log(currentWaypoint.name.Substring(0, currentWaypoint.name.Length - 6));
-				Debug.Log(currentWaypoint.name.Substring(0, currentWaypoint.name.Length - 6));
+			//	Debug.Log(currentWaypoint.name.Substring(0, currentWaypoint.name.Length - 6));
 				nextWaypoint = GameObject.Find(currentWaypoint.name.Substring(0, currentWaypoint.name.Length - 6));
 				checkedRoom = true;
 
@@ -68,14 +74,14 @@ public class GuardMoveAndLook : MonoBehaviour {
 			else if (currentWaypoint.name == "MiddleWaypoint")
 			{
 				//can go to any WaypointRoom#
-				Debug.Log("IN DAH MIDDLE!!!!!");
+			//	Debug.Log("IN DAH MIDDLE!!!!!");
 				checkedRoom = false;
 				nextWaypoint = GameObject.Find("WaypointRoom" + Random.Range(1,6));
 			}
 			else if (Regex.IsMatch(currentWaypoint.name, "Way^*"))
 			{
 				//Can go to the next in the list, or the middle
-				Debug.Log("STARED OUTSIDE OF A ROOM");
+			//	Debug.Log("STARED OUTSIDE OF A ROOM");
 
 				//if didn't already look inside... look inside, otherwise go to the next in the list.
 				if (!checkedRoom)
@@ -89,7 +95,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 					if (rand == 0)
 					{
 						nextWaypoint = GameObject.Find("MiddleWaypoint");
-						Debug.Log("HEADING THE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MIDDDAIL");
+				//		Debug.Log("HEADING THE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MIDDDAIL");
 					}
 					else
 					{
@@ -105,7 +111,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 								if ((i + 1) % theWaypoints.Count == 0)
 									nextWaypoint = theWaypoints[1];
 
-								Debug.Log("FOUND DAH WAYPOINT");
+							//	Debug.Log("FOUND DAH WAYPOINT");
 							}
 						}
 					}
@@ -117,7 +123,7 @@ public class GuardMoveAndLook : MonoBehaviour {
 			else
 			{
 				//can go to the next in the list.
-				Debug.Log("SOME CORNER");
+			//	Debug.Log("SOME CORNER");
 
 				for (int i = 0; i < theWaypoints.Count; i++)
 				{
@@ -129,12 +135,12 @@ public class GuardMoveAndLook : MonoBehaviour {
 						if ((i + 1) % theWaypoints.Count == 0)
 							nextWaypoint = theWaypoints[1];
 
-						Debug.Log("FOUND DAH WAYPOINT");
+					//	Debug.Log("FOUND DAH WAYPOINT");
 					}
 				}
 			}
 
-			Debug.Log("THE NEXT WAYPOINT IS: " + nextWaypoint.name);
+			//Debug.Log("THE NEXT WAYPOINT IS: " + nextWaypoint.name);
 
 			transform.LookAt(nextWaypoint.transform);
 

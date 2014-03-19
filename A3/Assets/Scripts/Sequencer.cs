@@ -3,19 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class Sequencer : Behavior{
+public class Sequencer : BehaviorNode{
 
-	public Sequencer()
-	{
-		children = new List<Behavior>();
-		
-	}
 
+	private int index = -1;
 	
-	public bool Execute()
+	public new void Execute()
 	{
-		Debug.Log("DAAAHHH SEQUENCER EXECUTE");
-		return true;
+		
+		if (index == -1)
+		{
+			theRetVal = mattsBool.Meh;
+		}
+		else if (index >= children.Count)
+		{
+			//we done, so return
+			theRetVal = mattsBool.True;
+			return;
+		}
+		else if (children[index].theRetVal == mattsBool.False)
+		{
+			theRetVal = mattsBool.False;
+			return;
+		}
+		
+		index += 1;
+		children[index].setTurn(mattsBool.Meh);
+		
+		
 	}
 
 }

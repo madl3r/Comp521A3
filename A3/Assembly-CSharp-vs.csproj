@@ -55,9 +55,14 @@
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Optional\HeadBob.cs" />
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Optional\PauseMenu.cs" />
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Utils\CameraFade.cs" />
+     <Compile Include="Assets\Scripts\AdventurerCollision.cs" />
      <Compile Include="Assets\Scripts\Behavior.cs" />
+     <Compile Include="Assets\Scripts\BehaviorNode.cs" />
      <Compile Include="Assets\Scripts\BehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\Guard.cs" />
+     <Compile Include="Assets\Scripts\GuardBehaviorTree.cs" />
      <Compile Include="Assets\Scripts\GuardMoveAndLook.cs" />
+     <Compile Include="Assets\Scripts\GuardMoveNode.cs" />
      <Compile Include="Assets\Scripts\Selector.cs" />
      <Compile Include="Assets\Scripts\Sequencer.cs" />
      <Compile Include="Assets\Scripts\SpawnBlocksAndTreasure.cs" />

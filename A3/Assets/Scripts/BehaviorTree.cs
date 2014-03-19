@@ -4,24 +4,23 @@ using System.Collections.Generic;
 
 public class BehaviorTree : MonoBehaviour {
 	
-	public Behavior run;
+	public BehaviorNode root;
 
 
 	void Start()
 	{
-		run = new Behavior();
-		run.Execute();
+
 	}
 	
 	
 	public void Execute()
 	{
-
+//		StartCoroutine(root.Execute());
 	}
 
 	public void printName()
 	{
-		Debug.Log("HELLO BITCHES");
+
 	}
 	
 	

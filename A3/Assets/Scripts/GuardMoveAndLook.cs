@@ -94,8 +94,11 @@ public class GuardMoveAndLook : MonoBehaviour {
 
 					if (rand == 0)
 					{
-						nextWaypoint = GameObject.Find("MiddleWaypoint");
-				//		Debug.Log("HEADING THE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MIDDDAIL");
+						int j = currentWaypoint.name.Length - 1;
+						nextWaypoint = GameObject.Find(currentWaypoint.name.Substring(0, j) + ((4 + int.Parse(currentWaypoint.name.Substring(j, 1))) % 8));
+				
+						//GameObject.Find("MiddleWaypoint");
+						//		Debug.Log("HEADING THE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MIDDDAIL");
 					}
 					else
 					{

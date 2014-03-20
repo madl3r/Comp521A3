@@ -16,13 +16,12 @@ public class AdventurerCollision : MonoBehaviour {
 
 	void OnTriggerEnter(Collider c)
 	{
-		//"Destroy" the wall 
+
 		if (c.gameObject.tag == "visionLines")
 		{
 			Debug.Log("GOT SPOTTED");
 		}
-		
-		//Destroy(gameObject); //remove from the scene the gameobject
+
 		
 	}
 

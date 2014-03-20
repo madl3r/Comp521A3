@@ -5,11 +5,12 @@ public class visionLine : MonoBehaviour {
 	
 	
 	public Material baseColor, hitColor;
-	
+	public GameObject thisGuard;
+
 	
 	// Use this for initialization
 	void Start () {
-		Debug.Log("HUHHH...?");
+
 	}
 	
 	// Update is called once per frame
@@ -17,24 +18,24 @@ public class visionLine : MonoBehaviour {
 		
 	}
 	
-	void OnCollisionStay(Collision c)
-	{
-		Debug.Log("ENTERING A COLLISION");
-	}
-	
 	void OnTriggerEnter(Collider c)
 	{
 
 		Debug.Log("ENTERING A COLLISION");
-		
-		if (!(c.gameObject.tag == "guard" && c.gameObject.tag == "visionLines"))
+
+		if (c.gameObject.tag == "Adventurer" )
 		{
-			Debug.Log("HIT SOMETHING ELSE");
-			transform.renderer.material.color = hitColor.color;
+			Debug.Log("I SEEEE YOU");
 		}
+
+//		if (!(c.gameObject.tag == "guard" && c.gameObject.tag == "visionLines"))
+//		{
+//			Debug.Log("HIT SOMETHING ELSE");
+//			transform.renderer.material.color = hitColor.color;
+//		}
 	}
 	
-	void OnCollisionExit(Collision c)
+	void OnTriggerExit(Collider c)
 	{
 		if (!(c.gameObject.tag == "guard" && c.gameObject.tag == "visionLines"))
 		{

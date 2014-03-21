@@ -19,6 +19,7 @@ public class Sequencer : BehaviorNode{
 		}
 		else if (children[index].theRetVal == mattsBool.False)
 		{
+			Debug.Log("SEQUENCER FAILED");
 			index = -1;
 			theRetVal = mattsBool.False;
 			parent.setTurn(theRetVal);

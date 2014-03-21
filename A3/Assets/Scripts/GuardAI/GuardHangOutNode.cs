@@ -11,7 +11,7 @@ public class GuardHangOutNode : BehaviorNode {
 	public override void Execute()
 	{
 		
-		Debug.Log("Shouldn't be hanging out");
+		//Debug.Log("Shouldn't be hanging out");
 		isMyTurn = false;
 		theRetVal = mattsBool.False;
 		parent.setTurn(theRetVal);

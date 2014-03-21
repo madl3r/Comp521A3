@@ -1,10 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AdventurerAI/spawnNode.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AdventurerAI/AdventurerChooseWaypoint.cs">
     <Files>
-      <File FileName="Assets/Scripts/AdventurerAI/Adventurer.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/GuardAI/Guard.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AdventurerAI/spawnNode.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AdventurerAI/Adventurer.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/GuardAI/Guard.cs" Line="75" Column="3" />
+      <File FileName="Assets/Scripts/AdventurerAI/spawnNode.cs" Line="16" Column="30" />
+      <File FileName="Assets/Scripts/GuardAI/GuardHangOutNode.cs" Line="4" Column="31" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerBehaviorTree.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerMoveNode.cs" Line="28" Column="21" />
+      <File FileName="Assets/Scripts/GuardAI/GuardMoveNode.cs" Line="7" Column="29" />
+      <File FileName="Assets/Scripts/GuardAI/GuardBehaviorTree.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerChooseWaypoint.cs" Line="14" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

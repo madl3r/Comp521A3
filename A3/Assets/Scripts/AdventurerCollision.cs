@@ -21,8 +21,16 @@ public class AdventurerCollision : MonoBehaviour {
 		{
 			Debug.Log("GOT SPOTTED");
 		}
-
+		else if (c.gameObject.tag == "treasureTag")
+		{
+			GameObject.Destroy(c.gameObject);
+		}
 		
+	}
+
+	void OnCollisionEnter(Collision c)
+	{
+		//transform.position += Vector3.Normalize(transform.position - c.gameObject.transform.position) * 0.12f;
 	}
 
 }

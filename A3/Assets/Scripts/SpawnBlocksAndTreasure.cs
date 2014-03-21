@@ -7,8 +7,8 @@ public class SpawnBlocksAndTreasure : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		obstacle1.transform.position = obstacle1.transform.position + new Vector3 (Random.Range(-2.2f, 2.2f), 0, Random.Range(-2.2f, 2.2f));
-		obstacle2.transform.position = obstacle2.transform.position + new Vector3 (Random.Range(-2.2f, 2.2f), 0, Random.Range(-2.2f, 2.2f));
+		obstacle1.transform.position = obstacle1.transform.position + new Vector3 (Random.Range(-2.0f, 2.0f), 0, Random.Range(-2.2f, 2.2f));
+		obstacle2.transform.position = obstacle2.transform.position + new Vector3 (Random.Range(-2.0f, 2.0f), 0, Random.Range(-2.2f, 2.2f));
 	
 	
 		obstacle1.transform.Rotate (0, Random.Range(-45, 45), 0); 

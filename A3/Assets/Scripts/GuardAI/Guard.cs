@@ -67,19 +67,11 @@ public class Guard : MonoBehaviour {
 			}
 		}
 
-
-
-
 		MahBrain.Execute();
-
-
-
-		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 
 		foreach (Transform lineToCastTo in visionLines)
 		{

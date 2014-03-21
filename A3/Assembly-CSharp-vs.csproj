@@ -57,6 +57,9 @@
      <Compile Include="Assets\First Person Drifter Controller\Scripts\Utils\CameraFade.cs" />
      <Compile Include="Assets\Scripts\AdventurerAI\Adventurer.cs" />
      <Compile Include="Assets\Scripts\AdventurerAI\AdventurerBehaviorTree.cs" />
+     <Compile Include="Assets\Scripts\AdventurerAI\AdventurerChooseWaypoint.cs" />
+     <Compile Include="Assets\Scripts\AdventurerAI\AdventurerMoveInsideRoom.cs" />
+     <Compile Include="Assets\Scripts\AdventurerAI\AdventurerMoveNode.cs" />
      <Compile Include="Assets\Scripts\AdventurerAI\spawnNode.cs" />
      <Compile Include="Assets\Scripts\AdventurerCollision.cs" />
      <Compile Include="Assets\Scripts\BehaviorTreeNodes\Behavior.cs" />

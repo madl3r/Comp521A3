@@ -1,16 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AdventurerAI/AdventurerChooseWaypoint.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GuardAI/GuardHangOutNode.cs">
     <Files>
-      <File FileName="Assets/Scripts/AdventurerAI/Adventurer.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/GuardAI/Guard.cs" Line="75" Column="3" />
-      <File FileName="Assets/Scripts/AdventurerAI/spawnNode.cs" Line="16" Column="30" />
-      <File FileName="Assets/Scripts/GuardAI/GuardHangOutNode.cs" Line="4" Column="31" />
-      <File FileName="Assets/Scripts/AdventurerAI/AdventurerBehaviorTree.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/AdventurerAI/AdventurerMoveNode.cs" Line="28" Column="21" />
-      <File FileName="Assets/Scripts/GuardAI/GuardMoveNode.cs" Line="7" Column="29" />
-      <File FileName="Assets/Scripts/GuardAI/GuardBehaviorTree.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/AdventurerAI/AdventurerChooseWaypoint.cs" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerWinCondition.cs" Line="4" Column="37" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerWinChooseWp.cs" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/AdventurerAI/AdventurerKillMe.cs" Line="27" Column="40" />
+      <File FileName="Assets/Scripts/GuardAI/Guard.cs" Line="145" Column="2" />
+      <File FileName="Assets/Scripts/GuardAI/chooseWaypointNode.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/GuardAI/GuardHangOutNode.cs" Line="24" Column="20" />
+      <File FileName="Assets/Scripts/GuardAI/GuardCheckCloseBuddies.cs" Line="33" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

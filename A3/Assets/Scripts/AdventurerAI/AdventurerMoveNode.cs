@@ -16,7 +16,7 @@ public class AdventurerMoveNode : BehaviorNode {
 	{
 		if (thief.atNextPoint && !thief.doneMoving)
 		{
-			Debug.Log("THIEF~~~~~~~~~~~~~~~ORDERING TO MOVE");
+			//Debug.Log("THIEF~~~~~~~~~~~~~~~ORDERING TO MOVE");
 			//Debug.Log("TRYING TO MOOOOVE");
 			thief.atNextPoint = false;
 			thief.doneMoving = false;
@@ -25,7 +25,7 @@ public class AdventurerMoveNode : BehaviorNode {
 		
 		if (thief.doneMoving)
 		{
-			Debug.Log("THIEF Finished Moving");
+			//Debug.Log("THIEF Finished Moving");
 			theRetVal = mattsBool.True;
 			parent.setTurn(theRetVal);
 			isMyTurn = false;

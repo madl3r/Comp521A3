@@ -5,7 +5,7 @@ public class visionLine : MonoBehaviour {
 	
 	
 	public Material baseColor, hitColor;
-	public GameObject thisGuard;
+	//public GameObject thisGuard;
 
 	
 	// Use this for initialization
@@ -21,11 +21,19 @@ public class visionLine : MonoBehaviour {
 	void OnTriggerEnter(Collider c)
 	{
 
-		Debug.Log("ENTERING A COLLISION");
+		//Debug.Log("ENTERING A COLLISION");
 
 		if (c.gameObject.tag == "Adventurer" )
 		{
-			Debug.Log("I SEEEE YOU");
+			Debug.Log("~~~~~~~~~~~~~~GAME OVER~~~~~~~~~~~~~~~~");
+		}
+		else if ((c.gameObject.tag == "guard" || c.gameObject.tag == "visionLines"))
+		{
+			;
+		}
+		else
+		{
+			transform.renderer.material.color = hitColor.color;
 		}
 
 //		if (!(c.gameObject.tag == "guard" && c.gameObject.tag == "visionLines"))

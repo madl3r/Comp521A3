@@ -47,12 +47,12 @@ public class AdventurerChooseWaypoint : BehaviorNode {
 	public override void Execute()
 	{
 		isMyTurn = false;
-		Debug.Log("Choosing waypoint");
+		//Debug.Log("Choosing waypoint");
 		
 		if (thief.atNextPoint)
 		{
 			thief.doneMoving = false;
-			Debug.Log("thief ACTUALLY CHOOSING");
+			//Debug.Log("thief ACTUALLY CHOOSING");
 
 			currentWaypoint = nextWaypoint;
 			thief.currentWaypoint = currentWaypoint;
@@ -64,7 +64,7 @@ public class AdventurerChooseWaypoint : BehaviorNode {
 			{
 				if (!checkedRoom)
 				{//RETURNING FALSE HERE, SO WILL GO TO INSIDE ROOM LOGIC
-					Debug.Log("~~~~~~~~~~INSIDE A ROOM");
+					//Debug.Log("~~~~~~~~~~INSIDE A ROOM");
 					theRetVal = mattsBool.False;
 					parent.setTurn(theRetVal);
 					checkedRoom = true;

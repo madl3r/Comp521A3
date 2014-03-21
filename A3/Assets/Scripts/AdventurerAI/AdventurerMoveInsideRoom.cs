@@ -23,7 +23,7 @@ public class AdventurerMoveInsideRoom : BehaviorNode {
 		//Debug.Log("~~~~~~~~~~~~~~~~In adventurerInsideMove");
 		if (!startedThisRoom)
 		{
-			Debug.Log("Starting a new room ~~~~~~~~~~~~~~~~~~~~~~~~8=======================D~~~~~~~~~~~~~");
+			//Debug.Log("Starting a new room ~~~~~~~~~~~~~~~~~~~~~~~~8=======================D~~~~~~~~~~~~~");
 			doneThisRoom = false;
 			startedThisRoom = true;
 			roomTreasureCount = 3;
@@ -32,7 +32,7 @@ public class AdventurerMoveInsideRoom : BehaviorNode {
 		//If we don't have a target treasure... find one!!
 		if (thisTreasure == null && roomTreasureCount > 0)
 		{
-			Debug.Log("Getting a new treasure for " + thief.currentWaypoint.ToString() + "  &&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%");
+			//Debug.Log("Getting a new treasure for " + thief.currentWaypoint.ToString() + "  &&&&&&&&&&&&&&&&&%%%%%%%%%%%%%%%%%");
 			roomTreasureCount--; //if we're here that means that we must have picked one up.
 			float wpDistance;
 			float thisDistance;
@@ -62,21 +62,21 @@ public class AdventurerMoveInsideRoom : BehaviorNode {
 		//then move towards the thiefs current waypoint.
 		if (roomTreasureCount <= 0)
 		{
-			Debug.Log(thief.currentWaypoint.ToString());
-			Debug.Log("Trying to leaave");
-
-			Debug.Log("1: " + thief.transform.position);
+//			Debug.Log(thief.currentWaypoint.ToString());
+//			Debug.Log("Trying to leaave");
+//
+//			Debug.Log("1: " + thief.transform.position);
 
 			thief.transform.position += ((thief.currentWaypoint.transform.position - thief.transform.position).normalized)  * 0.2f;
 
-			Debug.Log(thief.transform.position);
+//			Debug.Log(thief.transform.position);
 			//thief.transform.position = thief.currentWaypoint.transform.position;
 
-			Debug.Log((thief.currentWaypoint.transform.position - thief.transform.position).magnitude);
+//			Debug.Log((thief.currentWaypoint.transform.position - thief.transform.position).magnitude);
 
 			if ((thief.currentWaypoint.transform.position - thief.transform.position).magnitude < 0.5f)
 			{
-				Debug.Log("MADE IT THERE!");
+//				Debug.Log("MADE IT THERE!");
 				doneThisRoom = true;
 			}
 		}
@@ -85,7 +85,7 @@ public class AdventurerMoveInsideRoom : BehaviorNode {
 
 		if (doneThisRoom)
 		{
-			Debug.Log("00000000000000LEAVING dah room");
+//			Debug.Log("00000000000000LEAVING dah room");
 			theRetVal = mattsBool.True;
 			parent.setTurn(theRetVal);
 			startedThisRoom = false;

@@ -94,7 +94,12 @@ public class chooseWaypointNode : BehaviorNode {
 					{
 						int j = currentWaypoint.name.Length - 1;
 						nextWaypoint = GameObject.Find(currentWaypoint.name.Substring(0, j) + ((4 + int.Parse(currentWaypoint.name.Substring(j, 1))) % 8));
-						
+
+						if (nextWaypoint == null)
+						{
+							nextWaypoint = GameObject.Find("WaypointRoom8");
+						}
+
 						//GameObject.Find("MiddleWaypoint");
 						//		Debug.Log("HEADING THE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MIDDDAIL");
 					}

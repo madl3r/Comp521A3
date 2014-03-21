@@ -11,7 +11,7 @@ public class Adventurer : MonoBehaviour {
 	public AdventurerBehaviorTree AdventurerBrain; 
 	
 	private GameObject[]allWayPoints;
-
+	
 
 	public int score;
 
@@ -64,7 +64,7 @@ public class Adventurer : MonoBehaviour {
 		
 		journeyLength = Vector3.Distance(startPosition, nextPosition);
 
-		Debug.Log("~~~~~~~~!!!!!!!!!!!!!!!0000000MOVING TO: " + nextWaypoint.ToString());
+		//Debug.Log("~~~~~~~~!!!!!!!!!!!!!!!0000000MOVING TO: " + nextWaypoint.ToString());
 
 		StartCoroutine(toNextWaypoint());
 	}
